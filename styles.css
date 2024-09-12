@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-bottom: 20px; /* Space below the buttons */
+    
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.game-mode-button {
+    padding: 10px 50px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3b3b3b;
+    color: #e0e0e0;
+    font-size: 1em;
+}
+
+.game-mode-button:hover {
+    background-color: #4c4c4c;
+}
+
+/* Style for the selected mode button */
+.game-mode-button.selected {
+    background-color: #007bff;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+}
+
+#passive-container {
+    margin-bottom: 20px;
+    
+}
+
+#passive-container h2 {
+    margin-bottom: 10px;
+}
+
+#clue {
+    font-size: 1.1em;
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    width: 30%;
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.leader-skill-box {
+    background-color: #2a2a2a;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3b3b3b;
+    color: #e0e0e0;
+}
+
+button:hover {
+    background-color: #4c4c4c;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#card-image {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; /* Ensure the image is a block element */
+    margin-left: auto; /* Centers the image */
+    margin-right: auto; /* Centers the image */
+}
+
+.large-next-button {
+    padding: 15px 30px; /* Increase padding for a larger button */
+    font-size: 18px; /* Increase font size */
+    border: 2px solid #007bff; /* Optional: Add border to emphasize */
+    background-color: #3b3b3b; /* Optional: Change background color */
+    color: white; /* Change text color */
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for any change */
+}
+
+.suggestions-container {
+    position: absolute;
+    border: 1px solid #3b3b3b;
+    background: #3b3b3b;
+    max-height: 500px;
+    overflow-y: auto;
+    z-index: 1000;
+    width: calc(43% - 2px); /* Adjust based on your layout */
+}
+
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.suggestion-item img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-right: 8px; /* Space between image and text */
+}
+
+.suggestion-item:hover {
+    background-color: #4c4c4c;
+}
+
+.rules-button {
+    position: fixed;
+    top: 20px; /* Adjust to fit your design */
+    right: 20px; /* Adjust to fit your design */
+    width: 50px; /* Size of the circle */
+    height: 50px; /* Size of the circle */
+    border-radius: 50%; /* Make it circular */
+    background-color: #3b3b3b;
+    color: #fff;
+    border: none;
+    font-size: 24px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it stays on top of other elements */
+}
+
+.rules-button:hover {
+    background-color: #007bff;
+}
+
+.rules-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.rules-popup-content {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid #007bff; /* Optional: Add border to emphasize */
+}
+
+.rules-popup-content h2 {
+    margin-top: 0;
+}
+
+.rules-popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.rules-text {
+    font-size: 1.5em; /* Adjust as needed */
+    line-height: 1.6; /* Optional: Adjust line height for readability */
+}
+
+.streak{
+    position: fixed;
+    top: 20px; /* Adjust to fit your design */
+    left: 20px; /* Adjust to fit your design */
+    color: #fff;
+    border: none;
+    font-size: 24px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001; /* Ensure it stays on top of other elements */
+}

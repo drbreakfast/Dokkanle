@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokkanle!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dokkanle!</h1>
+    <div class="header-container">
+        <button class="game-mode-button" onclick="setMode('daily')">Daily</button>
+        <button class="game-mode-button" onclick="setMode('unlimited')">Unlimited</button>
+    </div>
+    <div class="game-container">
+        <div id="passive-container">
+            <h2>Passive</h2>
+            <p id="clue">Loading...</p>
+        </div>
+        <div class="info-boxes">
+            <div class="info-box" style="display: flex; flex-direction: column; align-items: center;">
+                <h3>Rarity</h3>
+                <p id="rarity-temp" style="display: block;">???</p>
+                <img id="rarity-image" src="images/unknown.png" alt="Rarity" style="display:none;" width="150" height=auto>
+            </div>
+            <div class="info-box" style="display: flex; flex-direction: column; align-items: center;">
+                <h3>Class</h3>
+                <p id="class-info" style="display: block;">???</p>
+            </div>
+            <div class="info-box" style="display: flex; flex-direction: column; align-items: center;">
+                <h3>Type</h3>
+                <p id="type-temp" style="display: block;">???</p>
+                <img id="type-image" src="images/unknown.png" alt="Type" style="display:none;" width="80" height=auto>
+            </div>
+        </div>
+        <div class="leader-skill-box">
+            <h3>Leader Skill</h3>
+            <p id="leader-info">???</p>
+        </div>
+        <input type="text" id="guess" placeholder="Enter card name" autocomplete="off">
+        <div id="suggestions" class="suggestions-container" style="display:none;"></div>
+        <button onclick="submitGuess()">Submit Guess</button>
+        <button onclick="revealMore()">Reveal More</button>
+        <button onclick="giveUp()">Give Up</button>
+        <button onclick="nextCard()"style="display:none;">Next</button>
+        <p id="feedback"></p>
+        <img id="card-image" src="" alt="Card Image" style="display:none;">
+    </div>
+
+    <button class="rules-button" onclick="showRules()">?</button>
+    <div id="rules-popup" class="rules-popup">
+        <div class="rules-popup-content">
+            <span class="close" onclick="closeRules()">&times;</span>
+            <h1>HOW TO PLAY</h1>
+            <hr>
+            <p class="rules-text">
+                Try to guess the dokkan card with as little information as possible.
+                <br><br>You have 5 guesses.
+                <br><br>The answer can only be a TUR or LR card. (This includes the TUR version of LR cards)
+                <br><br>Only the base form of transforming cards are used and the EZA/SEZA version of cards are always used.
+                <br><br>Daily resets at 8pm EST
+            </p>
+            <h1>INFO</h1>
+            <hr>
+            <p class="rules-text">
+                Cards last updated 9/6/24 (Though a few random cards may be missing)
+            </p>
+
+        </div>
+    </div>
+    <div id="streak" class="streak" style="display:none;">Unlimited Streak: </div>
+    <button onclick="clearLocalStorage()">Clear All Local Storage</button>
+
+    <script>
+    function clearLocalStorage() {
+        localStorage.clear();
+        alert('All local storage has been cleared!');
+    }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
