@@ -7,11 +7,6 @@ Dokkanle is a Wordle-style daily guessing game inspired by Dokkan Battle cards. 
 - **Daily Mode**: Guess the universal card of the day. A new card is featured each day, providing a fresh challenge for all players.
 - **Unlimited Mode**: Guess random cards without a daily limit.
 
-## Features
-
-- **Two Game Modes**: Daily and Unlimited modes to keep you entertained.
-- **Progressive Hints**: More hints are revealed as you make guesses, making the game engaging and challenging.
-
 ## Card Information
 
 All Dokkan Battle card information used in the game is sourced from the [DokkanWebScraper](https://github.com/MNprojects/DokkanWebScraper/tree/main?tab=readme-ov-file#dokkanwebscraper) by MNprojects.
