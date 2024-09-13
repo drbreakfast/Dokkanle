@@ -1,6 +1,6 @@
 # Dokkanle
 
-Dokkanle is a Wordle-style daily guessing game inspired by Dokkan Battle cards. Each day, players are challenged to guess a specific Dokkan Battle card based on parts of its passive skill, rarity, type, class, and leader skill. More information about the card can be revealed, making it easier to narrow down the possibilities.
+Dokkanle is a Wordle-style daily guessing game inspired by Dokkan Battle cards. Each day, players are challenged to guess a specific Dokkan Battle card based on parts of its passive skill, rarity, type, class, and leader skill. More information about the card can be revealed, making it easier to narrow down the possibilities. Dokkanle can be played [here](https://drbreakfast.github.io/Dokkanle/).
 
 ## How to Play
 
