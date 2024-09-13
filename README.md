@@ -1,6 +1,6 @@
 # Dokkanle
 
-Dokkanle is a Wordle-style daily guessing game inspired by Dokkan Battle cards. Each day, players are challenged to guess a specific Dokkan Battle card based on parts of its passive skill. As guesses are made, more information about the card is revealed, making it easier to narrow down the possibilities.
+Dokkanle is a Wordle-style daily guessing game inspired by Dokkan Battle cards. Each day, players are challenged to guess a specific Dokkan Battle card based on parts of its passive skill, rarity, type, class, and leader skill. More information about the card can be revealed, making it easier to narrow down the possibilities.
 
 ## How to Play
 
@@ -9,8 +9,8 @@ Dokkanle is a Wordle-style daily guessing game inspired by Dokkan Battle cards. 
 
 ## Card Information
 
-All Dokkan Battle card information used in the game is sourced from the [DokkanWebScraper](https://github.com/MNprojects/DokkanWebScraper/tree/main?tab=readme-ov-file#dokkanwebscraper) by MNprojects.
+All Dokkan Battle card information used in the game is sourced from the [Dokkan Wiki](https://dbz-dokkanbattle.fandom.com/wiki/Dragon_Ball_Z_Dokkan_Battle_Wiki).
 
 ## Credits
 
-- **[MNprojects/DokkanWebScraper](https://github.com/MNprojects/DokkanWebScraper/tree/main?tab=readme-ov-file#dokkanwebscraper)**: For scraping and providing the card data used in Dokkanle.
+- **[MNprojects/DokkanWebScraper](https://github.com/MNprojects/DokkanWebScraper/tree/main?tab=readme-ov-file#dokkanwebscraper)**: For providing scraping code to gather the card data used in Dokkanle.
