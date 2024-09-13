@@ -451,7 +451,11 @@ window.onclick = function(event) {
 }
 
 function showRules() {
-    document.getElementById('rules-popup').style.display = 'flex';
+    if(document.getElementById('rules-popup').style.display == 'flex'){
+        closeRules();
+    }else{
+        document.getElementById('rules-popup').style.display = 'flex';
+    }
 }
 
 function closeRules() {

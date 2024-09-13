@@ -208,20 +208,25 @@ button:hover {
     align-items: center;
     justify-content: center;
     z-index: 1000;
+    overflow: auto; /* Allow scrolling */
 }
 
 .rules-popup-content {
     background-color: #1e1e1e;
     border-radius: 8px;
     padding: 20px;
-    max-width: 600px;
+    max-width: 90%; /* Adjust width to fit smaller screens */
+    max-height: 90vh; /* Set a max height to prevent overflow */
     margin: 0 auto;
     position: relative;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    box-sizing: border-box; /* Include padding in width/height */
     border: 2px solid #007bff; /* Optional: Add border to emphasize */
 }
 
 .rules-popup-content h2 {
     margin-top: 0;
+    font-size: 1.5em; /* Adjust font size for better readability on mobile */
 }
 
 .rules-popup .close {
@@ -230,11 +235,13 @@ button:hover {
     right: 10px;
     font-size: 24px;
     cursor: pointer;
+    color: #fff; /* Ensure close button is visible */
 }
 
 .rules-text {
     font-size: 1.5em; /* Adjust as needed */
     line-height: 1.6; /* Optional: Adjust line height for readability */
+    /*text-align: left;*/
 }
 
 .streak{
