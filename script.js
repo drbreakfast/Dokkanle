@@ -283,7 +283,7 @@ function revealMore() {
                 document.getElementById('type-image').src = `images/${currentCard.type}_icon.png`;
                 document.getElementById('type-image').style.display = 'block';
                 document.getElementById('type-temp').style.display = 'none';
-                document.getElementById('leader-info').textContent = currentCard.leaderSkill || 'No Leader Skill';
+                document.getElementById('leader-info').textContent = currentCard.ezaLeaderSkill || currentCard.leaderSkill || 'No Leader Skill';
                 break;
             default:
                 break;
@@ -315,7 +315,7 @@ function revealAllInfo() {
     document.getElementById('type-image').src = `images/${currentCard.type}_icon.png`;
     document.getElementById('type-image').style.display = 'block';
     document.getElementById('type-temp').style.display = 'none';
-    document.getElementById('leader-info').textContent = currentCard.leaderSkill || 'No Leader Skill';
+    document.getElementById('leader-info').textContent = currentCard.ezaLeaderSkill || currentCard.leaderSkill || 'No Leader Skill';
     document.getElementById('card-image').src = currentCard.imageURL;
     document.getElementById('card-image').style.display = 'block';
 
