@@ -13,6 +13,7 @@ async function loadCards() {
         const response = await fetch('data/dokkan_cards.json');
         cards = await response.json();
         console.log('Cards loaded')
+        console.log(cards.length)
         initializeGame();
     } catch (error) {
         console.error('Error loading card data:', error);
@@ -65,7 +66,7 @@ function loadProgress() {
         passiveParts = passive.split(';');
         
         if (dailyCompleted) {
-            document.getElementById('feedback').textContent = "You have already completed today's challenge.";
+            document.getElementById('feedback').innerHTML = `You have already completed today's challenge.<br><br>The card is: ${currentCard.title + " - " + currentCard.name}`;
             revealAllInfo();
             document.querySelector('button[onclick="nextCard()"]').style.display = 'none';
             return;
