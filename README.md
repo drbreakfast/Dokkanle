@@ -18,5 +18,3 @@ All Dokkan Battle card information used in the game is sourced from the [Dokkan 
 ## Known Issues
 
 - Random cards are missing such as STR Super Vegeta and TEQ SSJ3 Broly
-- Super eza cards display their base passive skill
-- The TUR version of LR cards can appear
