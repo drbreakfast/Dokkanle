@@ -28,7 +28,18 @@ h1 {
 }
 
 .game-mode-button {
-    padding: 10px 50px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #3b3b3b;
+    color: #e0e0e0;
+    font-size: 1.2em;
+    width: 200px;
+    text-align: center; /* Center text in case the text is too short */
+}
+
+.game-play-button {
     margin: 0 10px;
     border: none;
     border-radius: 4px;
@@ -36,6 +47,8 @@ h1 {
     background-color: #3b3b3b;
     color: #e0e0e0;
     font-size: 1em;
+    width: 150px;
+    text-align: center; /* Center text in case the text is too short */
 }
 
 .game-mode-button:hover {
@@ -65,28 +78,45 @@ h1 {
     margin-bottom: 10px;
 }
 
+.bold-key {
+    font-weight: bold;
+    font-size: 1.2em; /* Slightly larger font */
+    color: white
+}
+
 #clue {
+    text-align: left;
+    white-space: pre-line;
     font-size: 1.1em;
-    background-color: #2a2a2a;
     padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #333;
+    padding-top: 0px;
     border-radius: 8px;
+    color: silver
 }
 
 .info-boxes {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.passive-box {
+    background-color: #2a2a2a;
+    padding: 10px;
+    padding-top: 0px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    border-radius: 8px;
 }
 
 .info-box {
-    width: 30%;
+    width: 47%;
     background-color: #2a2a2a;
     padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #333;
+    padding-top: 0px;
+    padding-bottom: 0px;
     border-radius: 8px;
+    border: 1px solid #333;
 }
 
 .leader-skill-box {
@@ -126,15 +156,52 @@ button:hover {
     margin-top: 20px;
     font-size: 1.2em;
 }
-
-#card-image {
+.image-container {
+    position: relative; /* Reference for absolute positioning */
+    width: 250px; /* Set your container width */
+    height: 250px; /* Set your container height */
+    margin: 0 auto; /* Center the image container horizontally */
+    pointer-events: none; /* Ensures the container itself doesn't block clicks */
     margin-top: 20px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block; /* Ensure the image is a block element */
-    margin-left: auto; /* Centers the image */
-    margin-right: auto; /* Centers the image */
+    margin-bottom: 10px;
+}
+
+.background-image {
+    position: absolute; /* Position it absolutely within the container */
+    width: 100%; /* Cover the full width */
+    height: 100%; /* Cover the full height */
+    object-fit: cover; /* Ensure the background image covers the area */
+    z-index: 1; /* Background image behind the foreground image */
+}
+
+.card-image {
+    position: absolute; /* Position it absolutely within the container */
+    top: -37.5px; /* Offset the image 10px down */
+    left: -30px; /* Offset the image 10px to the right */
+    width: 125%; /* Or use the width of your choice */
+    height: 125%; /* Or use the height of your choice */
+    object-fit: contain; /* Ensure the foreground image doesn't stretch */
+    z-index: 2; /* Ensure the foreground image is on top of the background */
+}
+
+.card-rarity {
+    position: absolute; /* Position it absolutely within the container */
+    top: 120px; /* Offset the image 10px down */
+    left: -60px; /* Offset the image 10px to the right */
+    width: 75%; /* Or use the width of your choice */
+    height: 75%; /* Or use the height of your choice */
+    object-fit: contain; /* Ensure the foreground image doesn't stretch */
+    z-index: 3; /* Ensure the foreground image is on top of the background */
+}
+
+.card-type {
+    position: absolute; /* Position it absolutely within the container */
+    top: -32px; /* Offset the image 10px down */
+    left: 180px; /* Offset the image 10px to the right */
+    width: 45%; /* Or use the width of your choice */
+    height: 45%; /* Or use the height of your choice */
+    object-fit: contain; /* Ensure the foreground image doesn't stretch */
+    z-index: 3; /* Ensure the foreground image is on top of the background */
 }
 
 .large-next-button {
@@ -241,6 +308,7 @@ button:hover {
 .rules-text {
     font-size: 1.5em; /* Adjust as needed */
     line-height: 1.6; /* Optional: Adjust line height for readability */
+    text-align: left;
     /*text-align: left;*/
 }
 

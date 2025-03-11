@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" href="images/Site-favicon.ico" type="image/x-icon">
+<!-- Favicon.io folder data -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/site.webmanifest">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,38 +28,43 @@
         <button class="game-mode-button" onclick="setMode('unlimited')">Unlimited</button>
     </div>
     <div class="game-container">
-        <div id="passive-container">
-            <h2>Passive</h2>
+        <button onclick="revealMore()" class="game-play-button">Reveal More</button>
+        <button onclick="giveUp()"class="game-play-button">Give Up</button>
+        <p id="feedback"></p>
+        <button onclick="nextCard()"style="display:none;">Next</button>
+        <div id="image-container" class="image-container"  style="display:none;">
+            <img id="background-image" src="" class="background-image" alt="Card Background"  style="display:none;">
+            <img id="card-image" src="" class="card-image" alt="Card Icon"  style="display:none;">
+            <img id="card-rarity" src="" class="card-rarity" alt="Card Rarity"  style="display:none;">
+            <img id="card-type" src="" class="card-type" alt="Card Type"  style="display:none;">
+        </div>
+        <div class="passive-box">
+            <h2 style="margin-bottom: 0px; margin-top: 5px;">Passive</h2>
+            <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
             <p id="clue">Loading...</p>
         </div>
         <div class="info-boxes">
             <div class="info-box" style="display: flex; flex-direction: column; align-items: center;">
-                <h3>Rarity</h3>
+                <h3 style="margin-bottom: 0px; margin-top: 5px;">Rarity</h3>
+                <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
                 <p id="rarity-temp" style="display: block;">???</p>
-                <img id="rarity-image" src="images/unknown.png" alt="Rarity" style="display:none;" width="150" height=auto>
+                <img id="rarity-image" src="images/unknown.png" alt="Rarity" style="display:none;" width="auto" height=100>
             </div>
             <div class="info-box" style="display: flex; flex-direction: column; align-items: center;">
-                <h3>Class</h3>
-                <p id="class-info" style="display: block;">???</p>
-            </div>
-            <div class="info-box" style="display: flex; flex-direction: column; align-items: center;">
-                <h3>Type</h3>
+                <h3 style="margin-bottom: 0px; margin-top: 5px;">Type</h3>
+                <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
                 <p id="type-temp" style="display: block;">???</p>
-                <img id="type-image" src="images/unknown.png" alt="Type" style="display:none;" width="80" height=auto>
+                <img id="type-image" src="images/unknown.png" alt="Type" style="display:none;" width="auto" height=100>
             </div>
         </div>
         <div class="leader-skill-box">
-            <h3>Leader Skill</h3>
+            <h3 style="margin-bottom: 0px; margin-top: 5px;">Leader Skill</h3>
+            <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
             <p id="leader-info">???</p>
         </div>
-        <input type="text" id="guess" placeholder="Enter card name" autocomplete="off">
+        <input type="text" id="guess" placeholder="Enter character name" autocomplete="off">
         <div id="suggestions" class="suggestions-container" style="display:none;"></div>
         <button onclick="submitGuess()">Submit Guess</button>
-        <button onclick="revealMore()">Reveal More</button>
-        <button onclick="giveUp()">Give Up</button>
-        <button onclick="nextCard()"style="display:none;">Next</button>
-        <p id="feedback"></p>
-        <img id="card-image" src="" alt="Card Image" style="display:none;">
     </div>
 
     <button class="rules-button" onclick="showRules()">?</button>
@@ -68,13 +77,14 @@
                 Try to guess the dokkan card with as little information as possible.
                 <br><br>You have 5 guesses.
                 <br><br>The answer can only be a TUR or LR card.
-                <br><br>Only the base form of transforming cards are used, and the EZA/SEZA version of cards are always used.
+                <br><br>The EZA/SEZA version of cards are always used.
+                <br><br>Note: Transformed forms of cards are not yet added.
             </p>
             <br>
             <h1>INFO</h1>
             <hr>
             <p class="rules-text">
-                Cards last updated 9/17/24 (Though some random cards are missing)
+                Cards last updated 3/11/25
                 <br><br>Daily resets at 8pm EST
             </p>
 
