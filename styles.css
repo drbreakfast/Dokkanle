@@ -162,7 +162,7 @@ button:hover {
     height: 250px; /* Set your container height */
     margin: 0 auto; /* Center the image container horizontally */
     pointer-events: none; /* Ensures the container itself doesn't block clicks */
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
