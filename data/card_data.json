@@ -1,5 +1,123 @@
 [
   {
+    "Title": "Exciting and Heart-Pounding Adventure",
+    "Name": "Goku (Youth)",
+    "Passive Skill": {
+      "Activates the Entrance Animation when there is another  \"DB Saga\", \"Youth\" or \"Dragon Ball Seekers\" Category  ally attacking in the same turn upon the character's entry": " <img alt=\"once\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_01.png\"/> Launches an additional Super Attack and damage reduction rate 40%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> for 7 turns",
+      "Basic effect(s)": "ATK & DEF 200%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Damage reduction rate 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Launches an additional attack that has a great chance of becoming a Super Attack",
+      "When attacking with 12 or more Ki": "ATK 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . 55% chance of performing a critical hit within the turn. 22% chance of evading enemy's attack within the turn",
+      "When receiving an attack": "DEF 200%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "For every Super Attack performed": " <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> ATK 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> (up to 200%)",
+      "After performing 7 or more Super Attacks in battle": " <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> Launches an additional Super Attack.  <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> Guards all attacks"
+    },
+    "Leader Skill": "\"DB Saga\" or \"Earth-Bred Fighters\" Category \nKi +3, HP +200% and ATK & DEF +170%, \nplus an additional HP, ATK & DEF +50% \nfor characters who also belong to the \"Youth\" or \"Dragon Ball Seekers\" Category",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_00_04.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1031080_thumb.png",
+      "card_rarity": "images/rarity_UR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_10.png"
+    }
+  },
+  {
+    "Title": "Quest for the Dragon Balls",
+    "Name": "Goku (Youth)",
+    "Passive Skill": {
+      "Basic effect(s)": "ATK & DEF 159%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . \"DB Saga\", \"Youth\" or \"Dragon Ball Seekers\" Category allies' Ki +3 and ATK & DEF 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Randomly changes Ki Spheres of a certain Type to Rainbow Ki Spheres",
+      "When attacking with 12 or more Ki": "ATK & DEF 159%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "For every Ki Sphere obtained": "ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "For every Rainbow Ki Sphere obtained": "Chance of performing a critical hit & damage reduction rate 10%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "3 or more Ki Spheres obtained, or 1 or more Ki Spheres  obtained as the 3rd attacker in a turn": "DEF 159%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "5 or more Ki Spheres obtained, or 3 or more Ki Spheres  obtained as the 3rd attacker in a turn": "Launches an additional attack that has a great chance of becoming a Super Attack",
+      "7 or more Ki Spheres obtained, or 5 or more Ki Spheres  obtained as the 3rd attacker in a turn": "All allies' chance of performing a critical hit & damage reduction rate 8%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . All allies' ATK & DEF 8%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> for 2 turns"
+    },
+    "Leader Skill": "\"DB Saga\" , \"Youth\" or \"Exploding Rage\" Category Ki +3 and HP, ATK & DEF +170%, \nplus an additional Ki +1 and HP, ATK & DEF +30% \nfor characters who also belong to \nthe \"Dragon Ball Seekers\" or \"Bond of Friendship\" Category",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_04.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1025070_thumb.png",
+      "card_rarity": "images/rarity_UR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png",
+      "card_eza": "images/card_eza.png"
+    }
+  },
+  {
+    "Title": "Merciless Judgment",
+    "Name": "Goku Black",
+    "Passive Skill": {
+      "Basic effect(s)": "ATK & DEF 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . \"Future Saga\" Category allies' Ki +1 and ATK & DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . \"Time Travelers\" Category allies' Ki +1 and ATK & DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "For every attack received": " <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> ATK & DEF 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> (up to 150%)",
+      "When there is a Super Class enemy": "ATK 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> when attacking",
+      "When the team includes all five Extreme Types": "All allies' ATK 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> within the character's attacking turn. DEF 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> and guards all attacks when attacking",
+      "When there is another ally whose name includes \"Zamasu\" or \"Goku Black\" attacking in the same turn": "ATK & DEF 200%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Great chance of performing a critical hit. All allies' DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> "
+    },
+    "Leader Skill": "Extreme STR Type \nKi +3 and HP, ATK & DEF +120%",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_03_04.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1024630_thumb.png",
+      "card_rarity": "images/rarity_UR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_23.png",
+      "card_eza": "images/card_eza.png"
+    }
+  },
+  {
+    "Title": "Impetuous Maiden",
+    "Name": "Chi-Chi (Youth)",
+    "Passive Skill": {
+      "Basic effect(s)": "Ki +2 and ATK & DEF 200%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Launches an additional attack that has a high chance of becoming a Super Attack. Super Class allies' ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> , plus an additional ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> for characters who also belong to the  \"DB Saga\" Category",
+      "When attacking with 12 or more Ki": "ATK 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Medium chance of ATK 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "For every Super Attack performed": " <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> ATK, DEF & chance of performing a critical hit 25%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> (up to 100%)",
+      "When the target enemy is in the following status: <img alt=\"atk_down\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_icon_st_0011.png\"/> , <img alt=\"def_down\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_icon_st_0012.png\"/> , <img alt=\"stun\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_icon_st_0100.png\"/> or <img alt=\"astute\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_icon_st_0102.png\"/> ": "Launches an additional Super Attack",
+      "When there is another \"Youth\" Category ally on the team": "DEF 200%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . High chance of evading enemy's attack",
+      "When there is an ally whose name includes \"Goku\" (Captain Ginyu,  Jr., etc. excluded) attacking in the same turn": "Guards all attacks. DEF 159%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> when receiving an attack"
+    },
+    "Leader Skill": "\"Youth\" or \"DB Saga\" Category \nKi +3 and HP, ATK & DEF +130%",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_02_04.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1031100_thumb.png",
+      "card_rarity": "images/rarity_UR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_12.png"
+    }
+  },
+  {
+    "Title": "Full-Power Breakthrough",
+    "Name": "Jackie Chun (Max Power)",
+    "Passive Skill": {
+      "Basic effect(s)": "Ki +3 and ATK & DEF 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . All allies' Ki +3. \"Kamehameha\" Category allies' ATK 40%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . \"DB Saga\" Category allies' DEF 40%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . \"Earthlings\" Category allies' chance of performing a critical hit 5%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "At the start of each turn": " <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> ATK & DEF 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> (up to 150%)",
+      "When attacking with 12 or more Ki": "ATK & DEF 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "When there is a \"Turtle School\" Category ally on the team": "Randomly changes Ki Spheres of a certain Type (PHY excluded) to Rainbow Ki Spheres",
+      "For every Rainbow Ki Sphere obtained": "Damage reduction rate 10%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "When HP is 50% or less": " <img alt=\"once\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_01.png\"/> Changes Ki Spheres: PHY to Rainbow.  <img alt=\"once\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_01.png\"/> ATK 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> .  <img alt=\"once\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_01.png\"/> High chance of performing a critical hit.  <img alt=\"once\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_01.png\"/> All allies' ATK & DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> for 3 turns"
+    },
+    "Leader Skill": "PHY Type Ki +3 and HP, ATK & DEF +100%",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_04.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1020040_thumb.png",
+      "card_rarity": "images/rarity_UR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png",
+      "card_eza": "images/card_eza.png"
+    }
+  },
+  {
+    "Title": "Recognized Strength",
+    "Name": "Gotenks",
+    "Passive Skill": {
+      "Basic effect(s)": "ATK & DEF 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Changes Ki Spheres: AGL to TEQ. \"Youth\" Category allies' Ki +1 and ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . \"Fusion\" Category allies' Ki +1 and ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "For every attack performed": "ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> within the turn",
+      "For every Super Attack performed": "Damage reduction rate 10%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> within the turn",
+      "For every TEQ Ki Sphere obtained": "All allies' DEF 5%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> (up to 20%)",
+      "3 or more Ki Spheres obtained": "ATK & DEF 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> when attacking. Launches an additional attack that has a high chance of becoming a Super Attack",
+      "5 or more Ki Spheres obtained": "Launches an additional attack that has a great chance of becoming a Super Attack"
+    },
+    "Leader Skill": "Super TEQ Type \nKi +3 and HP, ATK & DEF +120%",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_01_04.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1025640_thumb.png",
+      "card_rarity": "images/rarity_UR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_11.png",
+      "card_eza": "images/card_eza.png"
+    }
+  },
+  {
     "Title": "Saiyan Warriors with Ultimate Power",
     "Name": "Super Saiyan 4 Goku & Super Saiyan 4 Vegeta",
     "Passive Skill": {
@@ -7423,26 +7541,6 @@
     }
   },
   {
-    "Title": "Quest for the Dragon Balls",
-    "Name": "Goku (Youth)",
-    "Passive Skill": {
-      "Basic effect(s)": "ATK & DEF 159%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . \"DB Saga\" or \"Youth\" Category allies' Ki +2 and ATK & DEF 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Randomly changes Ki Spheres of a certain Type to Rainbow Ki Spheres",
-      "When attacking with 12 or more Ki": "ATK & DEF 59%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "For every Ki Sphere obtained": "ATK & DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "For every Rainbow Ki Sphere obtained": "Chance of performing a critical hit & damage reduction rate 7%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "3 or more Ki Spheres obtained": "DEF 59%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "5 or more Ki Spheres obtained": "Launches an additional attack that has a high chance of becoming a Super Attack",
-      "7 or more Ki Spheres obtained": "All allies' chance of performing a critical hit & damage reduction rate 8%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> "
-    },
-    "Leader Skill": "\"DB Saga\" , \"Youth\" or \"Exploding Rage\" Category Ki +3 and HP, ATK & DEF +170%, \nplus an additional HP, ATK & DEF +30% \nfor characters who also belong to the \"Dragon Ball Seekers\" or \"Bond of Friendship\" Category",
-    "Images": {
-      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_04.png",
-      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1025070_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
-      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png"
-    }
-  },
-  {
     "Title": "All-Or-Nothing Punch",
     "Name": "Goku (Youth)",
     "Passive Skill": {
@@ -9736,22 +9834,6 @@
     }
   },
   {
-    "Title": "Merciless Judgment",
-    "Name": "Goku Black",
-    "Passive Skill": {
-      "Basic effect(s)": "ATK & DEF 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . \"Future Saga\" Category allies' Ki +1, ATK 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> and DEF 10%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . \"Time Travelers\" Category allies' Ki +1, ATK 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> and DEF 10%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "For every attack received": " <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> (up to 100%)",
-      "When there is a Super Class enemy": "ATK 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> when attacking"
-    },
-    "Leader Skill": "Extreme STR Type \nKi +3 and HP, ATK & DEF +90%",
-    "Images": {
-      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_03_04.png",
-      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1024630_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
-      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_23.png"
-    }
-  },
-  {
     "Title": "Breaking Limits for Triumph",
     "Name": "Super Full Power Saiyan 4 Limit Breaker Vegeta (Xeno)",
     "Passive Skill": {
@@ -11279,22 +11361,6 @@
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1022310_thumb.png",
       "card_rarity": "images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_13.png"
-    }
-  },
-  {
-    "Title": "Full-Power Breakthrough",
-    "Name": "Jackie Chun (Max Power)",
-    "Passive Skill": {
-      "Basic effect(s)": "\"Kamehameha\" Category allies' Ki +3 and ATK 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "At the start of each turn": " <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> Ki +1 (up to +3).  <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> ATK & DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> (up to 80%)",
-      "When attacking with 12 or more Ki": "ATK & DEF 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> "
-    },
-    "Leader Skill": "PHY Type Ki +2 and HP, ATK & DEF +70%",
-    "Images": {
-      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_04.png",
-      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1020040_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
-      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png"
     }
   },
   {

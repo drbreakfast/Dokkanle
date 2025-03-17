@@ -169,15 +169,15 @@ function saveProgress() {
 // Function to trigger a reflow and adjust the layout
 function updateScrollingRows() {
     const scrollingWrapper = document.querySelector('#scrollingBackground');
-
-    console.log("breh")
     const pageHeightInVh = (document.documentElement.scrollHeight / window.innerHeight) * 100;
-    scrollingWrapper.style.height = `${pageHeightInVh}vh`;
-   
-    console.log(pageHeightInVh + 'vh');   
+    //console.log(pageHeightInVh)
+    scrollingWrapper.style.height = `${pageHeightInVh}vh`; 
 }
 
-document.body.addEventListener('click', () => {
+document.addEventListener('click', () => {
+    updateScrollingRows(); // Call the update function on click
+});
+document.addEventListener('scroll', () => {
     updateScrollingRows(); // Call the update function on click
 });
 
@@ -587,6 +587,7 @@ function displaySuggestions(suggestions) {
         div.onclick = () => {
             document.getElementById('guess').value = card["Name"];
             suggestionsContainer.innerHTML = ''; // Clear suggestions after selection
+            document.querySelector('#scrollingBackground').style.height=`100vh`;
         };
         suggestionsContainer.appendChild(div);
     });
