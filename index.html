@@ -20,79 +20,116 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-QJYHLYVWEW');
 </script>
-<body>
-    <h1>Dokkanle!</h1>
-    <div class="header-container">
-        <button class="game-mode-button" onclick="setMode('daily')">Daily</button>
-        <button class="game-mode-button" onclick="setMode('unlimited')">Unlimited</button>
-    </div>
-    <div class="game-container">
-        <button onclick="revealMore()" class="game-play-button">Reveal More</button>
-        <button onclick="giveUp()"class="game-play-button">Give Up</button>
-        <p id="feedback"></p>
-        <button onclick="nextCard()"style="display:none;">Next</button>
-        <div id="image-container" class="image-container"  style="display:none;">
-            <img id="background-image" src="" class="background-image" alt="Card Background"  style="display:none;">
-            <img id="card-image" src="" class="card-image" alt="Card Icon"  style="display:none;">
-            <img id="card-rarity" src="" class="card-rarity" alt="Card Rarity"  style="display:none;">
-            <img id="card-type" src="" class="card-type" alt="Card Type"  style="display:none;">
-        </div>
-        <div class="passive-box">
-            <h2 style="margin-bottom: 0px; margin-top: 5px;">Passive</h2>
-            <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
-            <p id="clue">Loading...</p>
-        </div>
-        <div class="info-boxes">
-            <div class="info-box" style="display: flex; flex-direction: column; align-items: center;">
-                <h3 style="margin-bottom: 0px; margin-top: 5px;">Rarity</h3>
-                <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
-                <p id="rarity-temp" style="display: block;">???</p>
-                <img id="rarity-image" src="images/unknown.png" alt="Rarity" style="display:none;" width="auto" height=100>
-            </div>
-            <div class="info-box" style="display: flex; flex-direction: column; align-items: center;">
-                <h3 style="margin-bottom: 0px; margin-top: 5px;">Type</h3>
-                <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
-                <p id="type-temp" style="display: block;">???</p>
-                <img id="type-image" src="images/unknown.png" alt="Type" style="display:none;" width="auto" height=100>
-            </div>
-        </div>
-        <div class="leader-skill-box">
-            <h3 style="margin-bottom: 0px; margin-top: 5px;">Leader Skill</h3>
-            <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
-            <p id="leader-info">???</p>
-        </div>
-        <input type="text" id="guess" placeholder="Enter character name" autocomplete="off">
-        <div id="suggestions" class="suggestions-container" style="display:none;"></div>
-        <button onclick="submitGuess()">Submit Guess</button>
-    </div>
 
-    <button class="rules-button" onclick="showRules()">?</button>
-    <div id="rules-popup" class="rules-popup">
-        <div class="rules-popup-content">
-            <span class="close" onclick="closeRules()">&times;</span>
-            <h1>HOW TO PLAY</h1>
-            <hr>
-            <p class="rules-text">
-                Try to guess the dokkan card with as little information as possible.
-                <br><br>You have 5 guesses.
-                <br><br>The answer can only be a TUR or LR card.
-                <br><br>The EZA/SEZA version of cards are always used.
-                <br><br>Note: Transformed forms of cards are not yet added.
-            </p>
-            <br>
-            <h1>INFO</h1>
-            <hr>
-            <p class="rules-text">
-                Cards last updated 3/11/25
-                <br><br>Daily resets at 8pm EST
-            </p>
+<div class="background-container">
+    <div class="scrolling-background" id="scrollingBackground"></div>
+</div>
 
+<button class="rules-button" onclick="showRules()">?</button>
+<div id="rules-popup" class="rules-popup">
+    <div class="rules-popup-content">
+        <span class="close" onclick="closeRules()">&times;</span>
+        <h1>HOW TO PLAY</h1>
+        <hr>
+        <p class="rules-text">
+            Try to guess the dokkan card with as little information as possible.
+            <br><br>You have 5 guesses.
+            <br><br>The answer can only be a TUR or LR card.
+            <br><br>The EZA/SEZA version of cards are always used.
+            <br><br>Note: Transformed forms of cards are not yet added.
+        </p>
+        <br>
+        <h1>INFO</h1>
+        <hr>
+        <p class="rules-text">
+            Cards last updated 3/11/25
+            <br><br>Daily resets at 8pm EST
+        </p>
+        <button class="big-button" onclick="showHome(); closeRules();">Return To Home</button>
+
+    </div>
+</div>
+
+<div id="landingPage">
+    <h1 class="outlined-text">Dokkanle!</h1>
+    <div class="description">
+        Dokkanle is a Wordle-style daily guessing game inspired by Dokkan Battle cards. 
+        Each day, players are challenged to guess a specific Dokkan Battle card based on parts of its passive skill, rarity, type, and leader skill. 
+        More information about the card can be revealed, making it easier to narrow down the possibilities.
+    </div>
+    <div class="text-box-container">
+        <div class="text-box">
+            <h3>Daily Mode</h3>
+            <p>Guess a new Dokkan Battle card each day. Everyone gets the same challenge!</p>
+            <button class="big-button" onclick="showGame(); setMode('daily')">Play</button>
+        </div>
+        <div class="text-box">
+            <h3>Unlimited Mode</h3>
+            <p>Guess as many Dokkan Battle cards as you want. Test your knowledge endlessly!</p>
+            <button class="big-button" onclick="showGame(); setMode('unlimited')">Play</button>
         </div>
     </div>
-    <div id="streak" class="streak" style="display:none;">Unlimited Streak: </div>
-    <script src="script.js?v=<%= new Date().getTime() %>"></script>
-</body>
+</div>
+<div id="gameContent" style="display:none; padding-bottom:20px;">
+    <body>
+        <h1 class="outlined-text">Dokkanle!</h1>
+        <div class="header-container">
+            <button class="game-mode-button" onclick="setMode('daily')">Daily</button>
+            <button class="game-mode-button" onclick="setMode('unlimited')">Unlimited</button>
+        </div>
+        <div class="game-container">
+            <button onclick="revealMore()" class="game-play-button">Reveal More</button>
+            <button onclick="giveUp()"class="game-play-button">Give Up</button>
+            <p id="feedback"></p>
+            <button onclick="nextCard()"style="display:none;">Next</button>
+            <div id="image-container" class="image-container"  style="display:none;">
+                <img id="background-image" src="" class="background-image" alt="Card Background"  style="display:none;">
+                <img id="card-image" src="" class="card-image" alt="Card Icon"  style="display:none;">
+                <img id="card-rarity" src="" class="card-rarity" alt="Card Rarity"  style="display:none;">
+                <img id="card-type" src="" class="card-type" alt="Card Type"  style="display:none;">
+            </div>
+            <div class="passive-box">
+                <h2 style="margin-bottom: 0px; margin-top: 5px;">Passive</h2>
+                <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
+                <p id="clue">Loading...</p>
+            </div>
+            <div class="info-boxes">
+                <div class="info-box" style="display: flex; flex-direction: column; align-items: center;">
+                    <h3 style="margin-bottom: 0px; margin-top: 5px;">Rarity</h3>
+                    <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
+                    <p id="rarity-temp" style="display: block;">???</p>
+                    <img id="rarity-image" src="images/unknown.png" alt="Rarity" style="display:none;  user-select: none; pointer-events: none;" width="auto" height=100>
+                </div>
+                <div class="info-box" style="display: flex; flex-direction: column; align-items: center;">
+                    <h3 style="margin-bottom: 0px; margin-top: 5px;">Type</h3>
+                    <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
+                    <p id="type-temp" style="display: block;">???</p>
+                    <img id="type-image" src="images/unknown.png" alt="Type" style="display:none; user-select: none; pointer-events: none;" width="auto" height=100>
+                </div>
+            </div>
+            <div class="leader-skill-box">
+                <h3 style="margin-bottom: 0px; margin-top: 5px;">Leader Skill</h3>
+                <hr style="border-color: silver; background-color: silver; width: 100%; height: 0.1px;">
+                <p id="leader-info">???</p>
+            </div>
+            <input type="text" id="guess" placeholder="Enter character name" autocomplete="off">
+            <div id="suggestions" class="suggestions-container" style="display:none;"></div>
+            <button onclick="submitGuess()">Submit Guess</button>
+        </div>
+        <div id="streak" class="streak" style="display:none;">Unlimited Streak: </div>
+        <script src="script.js?v=<%= new Date().getTime() %>"></script>
+    </body>
+</div>
+<script>
+  function showGame() {
+    document.getElementById('landingPage').style.display = 'none';
+    document.getElementById('gameContent').style.display = 'block';
+  }
+  function showHome() {
+    document.getElementById('landingPage').style.display = 'block';
+    document.getElementById('gameContent').style.display = 'none';
+  }
+</script>
 </html>

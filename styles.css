@@ -1,3 +1,15 @@
+.outlined-text {
+    font-size: 40px;
+    color: white; /* Text color */
+    text-shadow: 
+        2px 2px 0px rgba(0, 0, 0, 1),   /* Top-left shadow */
+        -2px -2px 0px rgba(0, 0, 0, 1),  /* Bottom-right shadow */
+        2px -2px 0px rgba(0, 0, 0, 1),   /* Top-right shadow */
+        -2px 2px 0px rgba(0, 0, 0, 1),   /* Bottom-left shadow */
+        0px 4px 5px rgba(0, 0, 0, 0.7),  /* Vertical shadow */
+        0px -4px 5px rgba(0, 0, 0, 0.7); /* Vertical shadow */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -164,6 +176,8 @@ button:hover {
     pointer-events: none; /* Ensures the container itself doesn't block clicks */
     margin-top: 30px;
     margin-bottom: 10px;
+    user-select: none;
+    pointer-events: none;
 }
 
 .background-image {
@@ -281,7 +295,8 @@ button:hover {
 .rules-popup-content {
     background-color: #1e1e1e;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
+    padding-top: 5px;
     max-width: 90%; /* Adjust width to fit smaller screens */
     max-height: 90vh; /* Set a max height to prevent overflow */
     margin: 0 auto;
@@ -323,4 +338,142 @@ button:hover {
     align-items: center;
     justify-content: center;
     z-index: 1001; /* Ensure it stays on top of other elements */
+}
+
+.big-button {
+    font-size: 1.5rem; /* Makes the text inside bigger */
+    padding: 15px 30px; /* Adds more space inside the button */
+    border-radius: 10px; /* Softens the corners */
+    background-color: #007bff; /* Blue color (adjust as needed) */
+    color: white; /* White text */
+    border: none; /* Removes default border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.big-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.text-box-container {
+    display: flex;
+    justify-content: center; /* Center the boxes */
+    gap: 20px; /* Space between boxes */
+    padding: 20px;
+}
+
+/* Styling for each text box */
+.text-box {
+    background: #121212; 
+    padding: 20px;
+    width: 500px; /* Set width */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #333;
+    font-size: 1.5rem; /* Increase text size */
+}
+
+.description {
+    background: #121212; 
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1.5rem; /* Increase text size */
+    max-width: 1000px; /* Limit width */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center text */
+    line-height: 1.6; /* Improve readability */
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+/* Background container */
+#scrollingBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Wrapper for rows */
+.scrolling-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Each scrolling row */
+.scrolling-row {
+    display: flex;
+    padding-top: 5px;
+    width: 205%;
+    animation: scrollLeft 20s linear infinite;
+}
+
+/* Reverse animation for alternating rows */
+.scrolling-row.reverse {
+    animation: scrollRight 20s linear infinite;
+}
+
+/* Card images */
+.scrolling-row img {
+    width: 180px; /* Adjust size */
+    height: auto;
+    margin: 0 8px;
+    opacity: 0.6;
+}
+
+/* Animations */
+@keyframes scrollLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+/*Scroll bar stuff*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    scrollbar-gutter: stable;
+}
+
+/* Ensure the content doesn't overflow vertically */
+html {
+    position: relative;
+    overflow-y: auto; /* Let body content scroll if needed */
+    overflow-x: hidden; /* Let body content scroll if needed */
+    height: 100%;
+}
+
+/* Scrollbar styles for dark theme */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212; /* Dark background to match page */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555; /* Lighter thumb to contrast with background */
+    border-radius: 10px;
+    border: 3px solid #121212; /* Optional: same as track color to blend */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777; /* Slightly lighter when hovered */
 }

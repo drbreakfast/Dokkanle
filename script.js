@@ -12,26 +12,80 @@ async function loadCards() {
     try {
         const response = await fetch('data/card_data.json');
         cards = await response.json();
-        console.log('Cards loaded')
-        console.log(cards.length)
+        console.log('Cards loaded:', cards.length);
+
+        // Extract images (assuming each card has an "image" property)
+        let images = cards.map(card => card["Images"]["card_thumb_character"]);
+
+        // Shuffle images
+        images = shuffleArray(images);
+
+        const backgroundContainer = document.getElementById("scrollingBackground");
+        backgroundContainer.innerHTML = ""; // Clear previous content
+
+        const rows = 15; // Number of rows
+        const imagesPerRow = 10
+
+        // Create a wrapper for each row
+        const rowWrapper = document.createElement("div");
+        rowWrapper.classList.add("scrolling-wrapper");
+
+        for (let i = 0; i < rows; i++) {
+            const row = document.createElement("div");
+            row.classList.add("scrolling-row");
+            if (i % 2 === 0) row.classList.add("reverse"); // Alternate direction
+
+            let rowImages = images.slice(i * imagesPerRow, (i + 1) * imagesPerRow);
+
+            // Add images to row
+            rowImages.forEach(src => {
+                const img = document.createElement("img");
+                img.src = src;
+                img.alt = "Dokkan Card";
+                row.appendChild(img);
+            });
+
+            // Duplicate images for seamless scrolling
+            rowImages.forEach(src => {
+                const img = document.createElement("img");
+                img.src = src;
+                img.alt = "Dokkan Card";
+                row.appendChild(img);
+            });
+
+            rowWrapper.appendChild(row);
+        }
+
+        // Append the row wrapper to the background container
+        backgroundContainer.appendChild(rowWrapper);
+
         initializeGame();
     } catch (error) {
         console.error('Error loading card data:', error);
     }
 }
 
-loadCards();
+// Shuffle array helper function
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+// Load images when the page loads
+window.onload = loadCards;
 
 // Initialize the game mode
 function initializeGame() {
-    // Check if cards have been loaded
     if (!cards.length) {
         console.error('No cards available. Ensure cards are loaded correctly.');
         return;
     }
-    // Set initial mode
     setMode('daily');
 }
+
 
 // Load progress from localStorage when the page loads
 function loadProgress() {
@@ -111,6 +165,22 @@ function saveProgress() {
     localStorage.setItem('revealStage', revealStage);
 }
 
+
+// Function to trigger a reflow and adjust the layout
+function updateScrollingRows() {
+    const scrollingWrapper = document.querySelector('#scrollingBackground');
+
+    console.log("breh")
+    const pageHeightInVh = (document.documentElement.scrollHeight / window.innerHeight) * 100;
+    scrollingWrapper.style.height = `${pageHeightInVh}vh`;
+   
+    console.log(pageHeightInVh + 'vh');   
+}
+
+document.body.addEventListener('click', () => {
+    updateScrollingRows(); // Call the update function on click
+});
+
 function setMode(mode) {
     // Select buttons
     const dailyButton = document.querySelector('.game-mode-button:nth-child(1)');
@@ -186,6 +256,10 @@ function pickDailyCard() {
 
 // Pick a new card randomly
 function pickNewCard() {
+    //Reset scroll background
+    const scrollingWrapper = document.querySelector('#scrollingBackground');
+    scrollingWrapper.style.height = `100vh`;
+
     resetGame();
     strikes = 5;
     currentCard = cards[Math.floor(Math.random() * cards.length)];
