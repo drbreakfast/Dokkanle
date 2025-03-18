@@ -7,10 +7,21 @@ let currentMode = 'daily'; // Default mode
 let strikes = 5; // Initialize the strike counter
 let dailyCompleted = false; // Flag to track if the daily card was completed
 let unlimitedStreak = 0;
+let basePath = window.location.pathname.includes('/daily/') || 
+window.location.pathname.includes('/unlimited/') ||
+window.location.pathname.includes('/info/') ? '../' : '';
 
 async function loadCards() {
     try {
-        const response = await fetch('data/card_data.json');
+        // Determine the base path relative to the current page
+        
+        // Fetch the card data using the appropriate path
+        const response = await fetch(basePath + 'data/card_data.json');
+        
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        
         cards = await response.json();
         console.log('Cards loaded:', cards.length);
 
@@ -83,7 +94,13 @@ function initializeGame() {
         console.error('No cards available. Ensure cards are loaded correctly.');
         return;
     }
-    setMode('daily');
+
+    if(window.location.pathname.includes('/daily/')){
+        setMode('daily');
+    }else if(window.location.pathname.includes('/unlimited/')){
+        setMode('unlimited');
+    }
+    
 }
 
 
@@ -181,18 +198,29 @@ document.addEventListener('scroll', () => {
     updateScrollingRows(); // Call the update function on click
 });
 
+// Get the current page path (without query parameters)
+let path = window.location.pathname.replace("/Website", "");  
+
+// Define a mapping of URLs to nav link IDs
+const navMap = {
+    "/index.html": "nav-home",
+    "/": "nav-home",  // This handles when users visit just the domain
+    "/daily/": "nav-daily",
+    "/unlimited/": "nav-unlimited",
+    "/info/": "nav-info"
+};
+
+// Get the corresponding nav link ID
+const activeNavId = navMap[path];
+
+// Apply the "active" class if the ID exists
+if (activeNavId) {
+    document.getElementById(activeNavId).classList.add("active");
+}
+
 function setMode(mode) {
-    // Select buttons
-    const dailyButton = document.querySelector('.game-mode-button:nth-child(1)');
-    const unlimitedButton = document.querySelector('.game-mode-button:nth-child(2)');
-
-    // Remove the selected class from both buttons
-    dailyButton.classList.remove('selected');
-    unlimitedButton.classList.remove('selected');
-
     // Add the selected class to the current mode button
     if (mode === 'daily') {
-        dailyButton.classList.add('selected');
         resetGame();
         loadProgress();
         document.querySelector('button[onclick="nextCard()"]').style.display = 'none';
@@ -201,7 +229,6 @@ function setMode(mode) {
             document.getElementById('streak').style.display = 'none';
         }
     } else if (mode === 'unlimited') {
-        unlimitedButton.classList.add('selected');
         pickNewCard();
     }
 
@@ -321,7 +348,8 @@ function resetGame() {
     document.getElementById('image-container').style.display = 'none';
     document.getElementById('rarity-temp').style.display = 'block';
     document.getElementById('type-temp').style.display = 'block';
-    
+    document.getElementById('streak-feedback').style.display = 'none';
+
     // Show "Give Up", "Reveal More", "Submit Guess" buttons, and the input textbox
     document.querySelector('button[onclick="giveUp()"]').style.display = 'inline-block';
     document.querySelector('button[onclick="revealMore()"]').style.display = 'inline-block';
@@ -341,8 +369,10 @@ function submitGuess() {
         document.getElementById('feedback').innerHTML = `Correct! The card is: ${currentCard["Title"] + " - " + currentCard["Name"]}`;
         if(currentMode == 'unlimited'){
             unlimitedStreak++;
-            document.getElementById('streak').innerHTML = `Unlimited Streak: ${unlimitedStreak}`;
-            document.getElementById('streak').style.display = 'inline-block';
+            if(unlimitedStreak > 1){
+                document.getElementById('streak').innerHTML = `Unlimited Streak: ${unlimitedStreak}`;
+                document.getElementById('streak').style.display = 'inline-block';
+            }
         }
         // Reset strikes for the next round if needed
         strikes = 5;
@@ -359,10 +389,6 @@ function submitGuess() {
         // Check if strikes have run out
         if (strikes <= 0) {
             document.getElementById('feedback').innerHTML = `Out of strikes! The card was: ${currentCard["Title"] + " - " + currentCard["Name"]}`;
-            if(currentMode == 'unlimited'){
-                unlimitedStreak = 0;
-                document.getElementById('streak').style.display = 'none';
-            }
             giveUp(); // Function to reveal the card
         } else {
             document.getElementById('feedback').innerHTML = `Incorrect! ${strikes} strikes remaining.`;
@@ -423,8 +449,12 @@ function revealMore() {
 // Give up function to reveal the answer
 function giveUp() {
     if(currentMode == 'unlimited'){
-        unlimitedStreak = 0;
         document.getElementById('streak').style.display = 'none';
+        if(unlimitedStreak > 1){
+            document.getElementById('streak-feedback').style.display = 'block';
+            document.getElementById('streak-feedback').innerHTML = `Your streak was: ${unlimitedStreak}`;
+        }
+        unlimitedStreak = 0;
     }
     document.getElementById('feedback').innerHTML = `The answer was: ${currentCard["Title"] + " - " + currentCard["Name"]}`;
     revealAllInfo();
@@ -459,6 +489,7 @@ function revealAllInfo() {
     // Make "Next" button bigger
     document.querySelector('button[onclick="nextCard()"]').style.display = 'inline-block';
     document.querySelector('button[onclick="nextCard()"]').classList.add('large-next-button');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Function to load the next card
@@ -467,12 +498,14 @@ function nextCard() {
 }
 
 // Add event listener to the input textbox
-document.getElementById('guess').addEventListener('keypress', function(event) {
-    if (event.key === 'Enter') {
-        event.preventDefault(); // Prevent form submission if inside a form
-        submitGuess(); // Trigger the submit guess function
-    }
-});
+if(basePath != ''){
+    document.getElementById('guess').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent form submission if inside a form
+            submitGuess(); // Trigger the submit guess function
+        }
+    });
+}
 
 // Function to filter and sort card names based on input
 function getSuggestions(input) {
@@ -501,7 +534,10 @@ function getSuggestions(input) {
     return filteredCards;
 }
 
+let inSuggestions = false
+
 function displaySuggestions(suggestions) {
+    inSuggestions = true
     const suggestionsContainer = document.getElementById('suggestions');
     suggestionsContainer.innerHTML = ''; // Clear existing suggestions
 
@@ -588,6 +624,7 @@ function displaySuggestions(suggestions) {
             document.getElementById('guess').value = card["Name"];
             suggestionsContainer.innerHTML = ''; // Clear suggestions after selection
             document.querySelector('#scrollingBackground').style.height=`100vh`;
+            inSuggestions = false
         };
         suggestionsContainer.appendChild(div);
     });
@@ -597,51 +634,23 @@ function displaySuggestions(suggestions) {
 }
 
 // Event listener for input changes
-document.getElementById('guess').addEventListener('input', function() {
-    const input = this.value;
-    if (input) {
-        const suggestions = getSuggestions(input);
-        displaySuggestions(suggestions);
-    } else {
-        document.getElementById('suggestions').style.display = 'none';
-    }
-});
+if(basePath != ''){
+    document.getElementById('guess').addEventListener('input', function() {
+        const input = this.value;
+        if (input) {
+            const suggestions = getSuggestions(input);
+            displaySuggestions(suggestions);
+        } else {
+            document.getElementById('suggestions').style.display = 'none';
+        }
+    });
 
-// Hide suggestions when clicking outside
-document.addEventListener('click', function(event) {
-    if (!event.target.matches('#guess')) {
-        document.getElementById('suggestions').style.display = 'none';
-    }
-});
-
-// Modal functionality
-const rulesButton = document.getElementById('rules-button');
-const rulesModal = document.getElementById('rules-modal');
-const closeModal = document.querySelector('.close');
-
-rulesButton.onclick = function() {
-    rulesModal.style.display = 'block';
-}
-
-closeModal.onclick = function() {
-    rulesModal.style.display = 'none';
-}
-
-// Click outside of modal to close
-window.onclick = function(event) {
-    if (event.target === rulesModal) {
-        rulesModal.style.display = 'none';
-    }
-}
-
-function showRules() {
-    if(document.getElementById('rules-popup').style.display == 'flex'){
-        closeRules();
-    }else{
-        document.getElementById('rules-popup').style.display = 'flex';
-    }
-}
-
-function closeRules() {
-    document.getElementById('rules-popup').style.display = 'none';
+    // Hide suggestions when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!event.target.matches('#guess') && inSuggestions) {
+            document.getElementById('suggestions').style.display = 'none';
+            document.querySelector('#scrollingBackground').style.height=`100vh`;
+            inSuggestions = false
+        }
+    });
 }
