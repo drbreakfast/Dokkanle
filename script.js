@@ -10,6 +10,7 @@ let unlimitedStreak = 0;
 let basePath = window.location.pathname.includes('/daily/') || 
 window.location.pathname.includes('/unlimited/') ||
 window.location.pathname.includes('/info/') ? '../' : '';
+let inSuggestions = false
 
 async function loadCards() {
     try {
@@ -188,7 +189,7 @@ function updateScrollingRows() {
     const scrollingWrapper = document.querySelector('#scrollingBackground');
     const pageHeightInVh = (document.documentElement.scrollHeight / window.innerHeight) * 100;
     //console.log(pageHeightInVh)
-    scrollingWrapper.style.height = `${pageHeightInVh}vh`; 
+    scrollingWrapper.style.height = `${pageHeightInVh-5}vh`; 
 }
 
 document.addEventListener('click', () => {
@@ -404,6 +405,8 @@ function revealMore() {
     if(revealStage > 2){
         document.getElementById('feedback').innerHTML = "Nothing left to reveal.";
         return;
+    }else{
+        //updateScrollingRows()
     }
 
     if (passiveIndex < passiveParts.length - 1) {
@@ -534,8 +537,6 @@ function getSuggestions(input) {
     return filteredCards;
 }
 
-let inSuggestions = false
-
 function displaySuggestions(suggestions) {
     inSuggestions = true
     const suggestionsContainer = document.getElementById('suggestions');
@@ -625,12 +626,14 @@ function displaySuggestions(suggestions) {
             suggestionsContainer.innerHTML = ''; // Clear suggestions after selection
             document.querySelector('#scrollingBackground').style.height=`100vh`;
             inSuggestions = false
+            suggestionsContainer.style.display = 'none';
         };
         suggestionsContainer.appendChild(div);
     });
 
     // Hide suggestions if there are none
     suggestionsContainer.style.display = suggestions.length ? 'block' : 'none';
+
 }
 
 // Event listener for input changes
