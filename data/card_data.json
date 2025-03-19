@@ -10140,19 +10140,6 @@
     }
   },
   {
-    "Title": "Proudest Moment",
-    "Name": "Brianne de Chateau",
-    "Passive Skill": {},
-    "Leader Skill": "\"Peppy Gals\" or \"Transformation Boost\" Category \nKi +3 and HP, ATK & DEF +150%",
-    "Images": {
-      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_02_04.png",
-      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1014060_thumb.png",
-      "card_rarity": "../images/rarity_UR.png",
-      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_12.png",
-      "card_eza": "../images/card_eza.png"
-    }
-  },
-  {
     "Title": "Ginyu Force Reborn",
     "Name": "Ginyu (Goku) (Ginyu Force)",
     "Passive Skill": {
@@ -11819,19 +11806,6 @@
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1021620_thumb.png",
       "card_rarity": "../images/rarity_LR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png",
-      "card_eza": "../images/card_eza.png"
-    }
-  },
-  {
-    "Title": "Hercule City's New Hero",
-    "Name": "Gohan (Teen)",
-    "Passive Skill": {},
-    "Leader Skill": "\"Defenders of Justice\" Category \nKi +3 and HP, ATK & DEF +77%; or \nSuper Class Ki +3 and HP, ATK & DEF +40%",
-    "Images": {
-      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_02_04.png",
-      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1018720_thumb.png",
-      "card_rarity": "../images/rarity_UR.png",
-      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_12.png",
       "card_eza": "../images/card_eza.png"
     }
   },

@@ -183,13 +183,42 @@ function saveProgress() {
     localStorage.setItem('revealStage', revealStage);
 }
 
+// Event listener for input changes
+if(basePath != '' && !window.location.pathname.includes('/info/')){
+    document.getElementById('guess').addEventListener('input', function() {
+        const input = this.value;
+        if (input) {
+            const suggestions = getSuggestions(input);
+            displaySuggestions(suggestions);
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        } else {
+            document.getElementById('suggestions').style.display = 'none';
+        }
+    });
+
+    // Hide suggestions when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!event.target.matches('#guess') && inSuggestions) {
+            document.getElementById('suggestions').style.display = 'none';
+            document.querySelector('#scrollingBackground').style.height=`95vh`;
+            inSuggestions = false
+        }
+    });
+}
 
 // Function to trigger a reflow and adjust the layout
 function updateScrollingRows() {
     const scrollingWrapper = document.querySelector('#scrollingBackground');
-    const pageHeightInVh = (document.documentElement.scrollHeight / window.innerHeight) * 100;
-    //console.log(pageHeightInVh)
-    scrollingWrapper.style.height = `${pageHeightInVh-5}vh`; 
+
+    const paddingTopValue = parseFloat(window.getComputedStyle(scrollingWrapper).paddingTop);
+    //console.log(paddingTopValue); // Outputs the value as a number (e.g., 20)
+
+    const pageHeightInVh = ((document.documentElement.scrollHeight-paddingTopValue) / window.innerHeight) * (100);
+    
+    //console.log("document.documentElement.scrollHeight= "+document.documentElement.scrollHeight);
+    //console.log("window.innerHeight= "+window.innerHeight);
+    scrollingWrapper.style.height = `${pageHeightInVh}vh`; 
+    console.log(window.innerWidth / 100)
 }
 
 document.addEventListener('click', () => {
@@ -198,6 +227,30 @@ document.addEventListener('click', () => {
 document.addEventListener('scroll', () => {
     updateScrollingRows(); // Call the update function on click
 });
+
+let lastRatio = window.devicePixelRatio;
+
+window.addEventListener("resize", () => {
+    if (window.devicePixelRatio !== lastRatio) {
+        console.log("Zoom level changed!", window.devicePixelRatio);
+        const scrollingWrapper = document.querySelector('#scrollingBackground');
+        scrollingWrapper.style.height = `95vh`;
+    }
+});
+
+//Prevent zooming
+/*
+document.addEventListener('wheel', (event) => {
+    if (event.ctrlKey) {
+        event.preventDefault(); // Prevent zooming with Ctrl + Scroll
+    }
+}, { passive: false });
+
+document.addEventListener('keydown', (event) => {
+    if (event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '0')) {
+        event.preventDefault(); // Prevent zooming with Ctrl + (+, -, or 0)
+    }
+});*/
 
 // Get the current page path (without query parameters)
 let path = window.location.pathname.replace("/Website", "");  
@@ -286,7 +339,7 @@ function pickDailyCard() {
 function pickNewCard() {
     //Reset scroll background
     const scrollingWrapper = document.querySelector('#scrollingBackground');
-    scrollingWrapper.style.height = `100vh`;
+    scrollingWrapper.style.height = `95vh`;
 
     resetGame();
     strikes = 5;
@@ -362,6 +415,7 @@ function resetGame() {
 }
 
 function submitGuess() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     const guessInput = document.getElementById('guess');
     const userGuess = guessInput.value.trim().toLowerCase();
 
@@ -405,8 +459,6 @@ function revealMore() {
     if(revealStage > 2){
         document.getElementById('feedback').innerHTML = "Nothing left to reveal.";
         return;
-    }else{
-        //updateScrollingRows()
     }
 
     if (passiveIndex < passiveParts.length - 1) {
@@ -492,7 +544,6 @@ function revealAllInfo() {
     // Make "Next" button bigger
     document.querySelector('button[onclick="nextCard()"]').style.display = 'inline-block';
     document.querySelector('button[onclick="nextCard()"]').classList.add('large-next-button');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Function to load the next card
@@ -624,7 +675,7 @@ function displaySuggestions(suggestions) {
         div.onclick = () => {
             document.getElementById('guess').value = card["Name"];
             suggestionsContainer.innerHTML = ''; // Clear suggestions after selection
-            document.querySelector('#scrollingBackground').style.height=`100vh`;
+            document.querySelector('#scrollingBackground').style.height=`95vh`;
             inSuggestions = false
             suggestionsContainer.style.display = 'none';
         };
@@ -633,27 +684,8 @@ function displaySuggestions(suggestions) {
 
     // Hide suggestions if there are none
     suggestionsContainer.style.display = suggestions.length ? 'block' : 'none';
+    if(suggestionsContainer.style.display == 'none'){
+        document.querySelector('#scrollingBackground').style.height=`95vh`;
+    }
 
-}
-
-// Event listener for input changes
-if(basePath != ''){
-    document.getElementById('guess').addEventListener('input', function() {
-        const input = this.value;
-        if (input) {
-            const suggestions = getSuggestions(input);
-            displaySuggestions(suggestions);
-        } else {
-            document.getElementById('suggestions').style.display = 'none';
-        }
-    });
-
-    // Hide suggestions when clicking outside
-    document.addEventListener('click', function(event) {
-        if (!event.target.matches('#guess') && inSuggestions) {
-            document.getElementById('suggestions').style.display = 'none';
-            document.querySelector('#scrollingBackground').style.height=`100vh`;
-            inSuggestions = false
-        }
-    });
 }
