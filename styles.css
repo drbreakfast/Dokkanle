@@ -375,12 +375,12 @@ button:hover {
     display: flex;
     padding-top: 0px;
     width: 204.1vw;
-    animation: scrollLeft 5s linear infinite;
+    animation: scrollLeft 20s linear infinite;
 }
 
 /* Reverse animation for alternating rows */
 .scrolling-row.reverse {
-    animation: scrollRight 5s linear infinite;
+    animation: scrollRight 20s linear infinite;
 }
 
 /* Card images */
