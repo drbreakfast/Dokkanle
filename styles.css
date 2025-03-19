@@ -375,19 +375,19 @@ button:hover {
     display: flex;
     padding-top: 0px;
     width: 204.1vw;
-    animation: scrollLeft 20s linear infinite;
+    animation: scrollLeft 5s linear infinite;
 }
 
 /* Reverse animation for alternating rows */
 .scrolling-row.reverse {
-    animation: scrollRight 20s linear infinite;
+    animation: scrollRight 5s linear infinite;
 }
 
 /* Card images */
 .scrolling-row img {
     width: 9.375vw; /* Adjust size */
     height: auto;
-    margin: 0 8px;
+    margin: 0 0.417vw;
     opacity: 0.6;
 }
 
