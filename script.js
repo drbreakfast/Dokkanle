@@ -219,7 +219,7 @@ function updateScrollingRows() {
     //console.log("document.documentElement.scrollHeight= "+document.documentElement.scrollHeight);
     //console.log("window.innerHeight= "+window.innerHeight);
     scrollingWrapper.style.height = `${pageHeightInVh}vh`; 
-    console.log(window.innerWidth / 100)
+    //console.log(window.innerWidth / 100)
 }
 
 document.addEventListener('click', () => {
