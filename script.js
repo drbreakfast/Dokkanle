@@ -9,7 +9,8 @@ let dailyCompleted = false; // Flag to track if the daily card was completed
 let unlimitedStreak = 0;
 let basePath = window.location.pathname.includes('/daily/') || 
 window.location.pathname.includes('/unlimited/') ||
-window.location.pathname.includes('/info/') ? '../' : '';
+window.location.pathname.includes('/info/') || 
+window.location.pathname.includes('/privacy-policy/') ? '../' : '';
 let inSuggestions = false
 
 async function loadCards() {

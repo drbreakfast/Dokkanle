@@ -1,6 +1,7 @@
 let p = window.location.pathname.includes('/daily/') || 
 window.location.pathname.includes('/unlimited/') ||
-window.location.pathname.includes('/info/') ? '../' : '';
+window.location.pathname.includes('/info/') || 
+window.location.pathname.includes('/privacy-policy/') ? '../' : '';
 document.write(`
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
