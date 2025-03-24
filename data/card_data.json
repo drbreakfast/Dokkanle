@@ -1,5 +1,24 @@
 [
   {
+    "Title": "Decisive Showdown",
+    "Name": "Super Saiyan Bardock",
+    "Passive Skill": {
+      "Activates the Entrance Animation when another 3 or more Super Class allies are on the team upon the character's entry": " <img alt=\"once\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_01.png\"/> Launches an additional Super Attack and guards all attacks for 4 turns",
+      "Basic effect(s)": "Ki +5 and ATK & DEF 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . High chance of performing a critical hit. Super Class allies' Ki +1 and ATK & DEF 25%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . \"Time Travelers\" Category allies' Ki +1 and ATK & DEF 25%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "When there is a \"Wicked Bloodline\" or \"Transformation Boost\" Category enemy": " <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> ATK 120%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> .  <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> Damage reduction rate 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "When there is another Super Class ally attacking in the same turn": "Launches an additional attack that has a great chance of becoming a Super Attack",
+      "When attacking with 12 or more Ki": "ATK & DEF 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "When HP is 60% or less": "ATK 60%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Performs a critical hit.  <img alt=\"once\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_01.png\"/> Foresees enemy's Super Attack"
+    },
+    "Leader Skill": "\"Time Travelers\" Category \nKi +3 and HP, ATK & DEF +80%",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_00_05.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1029830_thumb.png",
+      "card_rarity": "images/rarity_LR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_10.png"
+    }
+  },
+  {
     "Title": "Exciting and Heart-Pounding Adventure",
     "Name": "Goku (Youth)",
     "Passive Skill": {
@@ -2618,25 +2637,6 @@
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1029590_thumb.png",
       "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_22.png"
-    }
-  },
-  {
-    "Title": "The Outcome of Repeated Tragedy",
-    "Name": "Super Saiyan Bardock",
-    "Passive Skill": {
-      "Activates the Entrance Animation when another 4 or more Super Class allies are on the team upon the character's entry": " <img alt=\"once\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_01.png\"/> Launches an additional attack that has a great chance of becoming a Super Attack for 4 turn(s)",
-      "Basic effect(s)": "ATK & DEF 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Super Class allies' Ki +1 and ATK & DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Medium chance of performing a critical hit. \"Time Travelers\" Category allies' Ki +1 and ATK & DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "When there is a \"Wicked Bloodline\" Category enemy": "ATK 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "When all allies attacking in the same turn are Super Class characters": "Launches an additional attack that has a high chance of becoming a Super Attack",
-      "When attacking with 12 or more Ki": "ATK & DEF 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "When HP is 50% or less": "ATK & chance of performing a critical hit 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> "
-    },
-    "Leader Skill": "\"Time Travelers\" Category \nKi +2 and HP, ATK & DEF +50%",
-    "Images": {
-      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_00_04.png",
-      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1029820_thumb.png",
-      "card_rarity": "../images/rarity_UR.png",
-      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_10.png"
     }
   },
   {
