@@ -1,5 +1,103 @@
 [
   {
+    "Title": "Unpredictable Powerful Technique",
+    "Name": "Paikuhan",
+    "Passive Skill": {
+      "Basic effect(s)": "Ki +3 and ATK & DEF 250%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . High chance of evading enemy's attack. Randomly changes Ki Spheres of a certain Type (PHY excluded) to Rainbow Ki Spheres",
+      "When there is another \"Otherworld Warriors\" or \"Tournament Participants\" Category ally attacking in the same turn": "All allies' Ki +3 and ATK & DEF 40%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "As the 2nd attacker in a turn": " <img alt=\"once\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_01.png\"/> \"Otherworld Warriors\" or \"Tournament Participants\" Category allies' damage reduction rate 10%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> for 2 turns",
+      "As the 2nd or 3rd attacker in a turn": "Guards all attacks. High chance of performing a critical hit. Launches an additional attack that has a high chance of becoming a Super Attack. Chance of evading enemy's attack 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "When attacking with 18 or more Ki": "ATK & DEF 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> "
+    },
+    "Leader Skill": "\"Otherworld Warriors\" or \"Saviors\" Category \nKi +3 and HP, ATK & DEF +200%",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_05.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1030970_thumb.png",
+      "card_rarity": "images/rarity_LR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png"
+    }
+  },
+  {
+    "Title": "Otherworld in Collapse",
+    "Name": "Janemba",
+    "Passive Skill": {
+      "Basic effect(s)": "ATK & DEF 180%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Guards all attacks. Damage reduction rate 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Extreme Class allies' Ki +2 and ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "3 or more Type Ki Spheres obtained": "\"Corroded Body and Mind\" or \"Uncontrollable Power\" Category allies' ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Launches an additional attack that has a great chance of becoming a Super Attack",
+      "1 or more Rainbow Ki Spheres obtained": "DEF 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Damage reduction rate 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "For every attack received": " <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> ATK 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> (up to 100%).  <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> Damage reduction rate 5% <img alt=\"down_r\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow02.png\"/> (no more than -50%)"
+    },
+    "Leader Skill": "\"Corroded Body and Mind\" Category \nKi +3 and HP, ATK & DEF +180%; or \nExtreme Class Ki +3 and HP, ATK & DEF +130%",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_01_04.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1021290_thumb.png",
+      "card_rarity": "images/rarity_UR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_21.png",
+      "card_eza": "images/card_eza.png"
+    }
+  },
+  {
+    "Title": "Burning to the Last",
+    "Name": "Super Saiyan Goku (Angel) (Super Kaioken)",
+    "Passive Skill": {
+      "Basic effect(s)": "Ki +4 and ATK & DEF 200%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . High chance of evading enemy's attack. Randomly changes INT Ki Spheres to Ki Spheres of another Type",
+      "When receiving an attack": "Survives K.O. attacks (up to once within a turn)",
+      "When HP is 80% or more": "DEF 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "When HP is 80% or less": "Changes Ki Spheres: PHY to STR",
+      "When attacking with 12 or more Ki": "ATK & DEF 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . An additional ATK & DEF 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> when HP is 80% or less",
+      "With a STR or PHY Ki Sphere obtained": "Launches 2 additional Super Attacks",
+      "For every STR or PHY Ki Sphere obtained": "ATK 40%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Chance of performing a critical hit 10%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "With an AGL, TEQ or INT Ki Sphere obtained": "Guards all attacks",
+      "For every AGL, TEQ or INT Ki Sphere obtained": "ATK & DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Chance of evading enemy's attack 5%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> "
+    },
+    "Leader Skill": "PHY Type Ki +3 and HP, ATK & DEF +100%",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_04.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1010660_thumb.png",
+      "card_rarity": "images/rarity_UR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png",
+      "card_eza": "images/card_eza.png"
+    }
+  },
+  {
+    "Title": "Righteous Otherworld Defense",
+    "Name": "Paikuhan",
+    "Passive Skill": {
+      "Basic effect(s)": "ATK & DEF 200%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . High chance of evading enemy's attack. Super Class allies' Ki +2 and ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "For 7 turns from the character's entry turn": "DEF 200%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Guards all attacks",
+      "3 or more Type Ki Spheres obtained": "\"Otherworld Warriors\" or \"Connected Hope\" Category allies' ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Launches an additional attack that has a great chance of becoming a Super Attack",
+      "1 or more Rainbow Ki Spheres obtained": "Ki +4. Chance of evading enemy's attack 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Seals the attacked enemy's Super Attack for 2 turns",
+      "When attacking with 12 or more Ki": "ATK & DEF 200%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> "
+    },
+    "Leader Skill": "\"Connected Hope\" Category \nKi +3 and HP, ATK & DEF +180%; or \nSuper Class Ki +3 and HP, ATK & DEF +130%",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_00_04.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1021330_thumb.png",
+      "card_rarity": "images/rarity_UR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_10.png",
+      "card_eza": "images/card_eza.png"
+    }
+  },
+  {
+    "Title": "Blazing Clash",
+    "Name": "Paikuhan",
+    "Passive Skill": {
+      "Basic effect(s)": "ATK & DEF 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . All enemies' DEF 50%<img alt=\"down_y\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow03.png\"/> . Launches an additional attack that has a high chance of becoming a Super Attack",
+      "For 4 turns from the character's entry turn": "High chance of evading enemy's attack",
+      "For every Super Attack performed": " <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> Ki +1 and ATK & DEF 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> .  <img alt=\"forever\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_icon_02.png\"/> Chance of performing a critical hit & chance of evading enemy's attack 10%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> (up to 50%)",
+      "When the target enemy is in the following status: <img alt=\"atk_down\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_icon_st_0011.png\"/> or <img alt=\"def_down\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_icon_st_0012.png\"/> ": "ATK 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "Before receiving an attack within the turn": "Damage reduction rate 50%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
+      "When all allies attacking in the same turn are \"Otherworld Warriors\" or \"Tournament Participants\" Category characters": "ATK & DEF 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Chance of performing a critical hit & damage reduction rate 20%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Launches an additional attack that has a great chance of becoming a Super Attack"
+    },
+    "Leader Skill": "STR Type Ki +3 and HP, ATK & DEF +100%",
+    "Images": {
+      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_03_04.png",
+      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1011040_thumb.png",
+      "card_rarity": "images/rarity_UR.png",
+      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_13.png",
+      "card_eza": "images/card_eza.png"
+    }
+  },
+  {
     "Title": "Stable Combat Power",
     "Name": "Vegeta (Mini) (DAIMA)",
     "Passive Skill": {
@@ -12620,38 +12718,6 @@
     }
   },
   {
-    "Title": "Otherworld in Collapse",
-    "Name": "Janemba",
-    "Passive Skill": {
-      "Basic effect(s)": "ATK & DEF 120%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Guards all attacks",
-      "4 or more Type Ki Spheres obtained": "Extreme Class allies' Ki +2 and ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "2 or more Rainbow Ki Spheres obtained": "Damage reduction rate 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> "
-    },
-    "Leader Skill": "\"Corroded Body and Mind\" Category \nKi +3 and HP, ATK & DEF +170%; or \nExtreme Class Ki +3 and HP, ATK & DEF +130%",
-    "Images": {
-      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_01_04.png",
-      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1021290_thumb.png",
-      "card_rarity": "../images/rarity_UR.png",
-      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_21.png"
-    }
-  },
-  {
-    "Title": "Righteous Otherworld Defense",
-    "Name": "Paikuhan",
-    "Passive Skill": {
-      "Basic effect(s)": "ATK & DEF 150%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "3 or more Type Ki Spheres obtained": "Super Class allies' Ki +2 and ATK & DEF 30%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> ",
-      "1 or more Rainbow Ki Spheres obtained": "Ki +4. High chance of evading enemy's attack. Seals the attacked enemy's Super Attack"
-    },
-    "Leader Skill": "\"Connected Hope\" Category \nKi +3 and HP, ATK & DEF +170%; or \nSuper Class Ki +3 and HP, ATK & DEF +130%",
-    "Images": {
-      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_00_04.png",
-      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1021330_thumb.png",
-      "card_rarity": "../images/rarity_UR.png",
-      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_10.png"
-    }
-  },
-  {
     "Title": "Evil Incursion",
     "Name": "Super Janemba",
     "Passive Skill": {
@@ -14599,20 +14665,6 @@
     }
   },
   {
-    "Title": "Blazing Clash",
-    "Name": "Paikuhan",
-    "Passive Skill": {
-      "Basic effect(s)": "ATK 100%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . All enemies' DEF 50%<img alt=\"down_y\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow03.png\"/> "
-    },
-    "Leader Skill": "STR Type Ki +2 and HP, ATK & DEF +70%",
-    "Images": {
-      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_03_04.png",
-      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1011040_thumb.png",
-      "card_rarity": "../images/rarity_UR.png",
-      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_13.png"
-    }
-  },
-  {
     "Title": "Brains and Brawn Combined",
     "Name": "Super Saiyan Trunks (GT)",
     "Passive Skill": {
@@ -15854,20 +15906,6 @@
       "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_13.png",
       "card_eza": "../images/card_eza.png"
-    }
-  },
-  {
-    "Title": "Burning to the Last",
-    "Name": "Super Saiyan Goku (Angel) (Super Kaioken)",
-    "Passive Skill": {
-      "Basic effect(s)": "Ki +4 and ATK 120%<img alt=\"up_g\" src=\"https://dokkan.wiki/assets/global/en/layout/en/image/ingame/battle/skill_dialog/passive_skill_dialog_arrow01.png\"/> . Medium chance of evading enemy's attack"
-    },
-    "Leader Skill": "PHY Type Ki +2 and HP, ATK & DEF +70%",
-    "Images": {
-      "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_04.png",
-      "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1010660_thumb.png",
-      "card_rarity": "../images/rarity_UR.png",
-      "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png"
     }
   },
   {
