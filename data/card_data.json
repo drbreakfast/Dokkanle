@@ -13,7 +13,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_05.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1030970_thumb.png",
-      "card_rarity": "images/rarity_LR.png",
+      "card_rarity": "../images/rarity_LR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png"
     }
   },
@@ -30,7 +30,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_01_04.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1021290_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
+      "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_21.png",
       "card_eza": "images/card_eza.png"
     }
@@ -53,7 +53,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_04.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1010660_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
+      "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png",
       "card_eza": "images/card_eza.png"
     }
@@ -72,7 +72,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_00_04.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1021330_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
+      "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_10.png",
       "card_eza": "images/card_eza.png"
     }
@@ -92,7 +92,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_03_04.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1011040_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
+      "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_13.png",
       "card_eza": "images/card_eza.png"
     }
@@ -108,7 +108,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_02_04.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1030680_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
+      "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_12.png"
     }
   },
@@ -127,7 +127,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_00_04.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1024380_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
+      "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_20.png",
       "card_eza": "images/card_eza.png"
     }
@@ -145,7 +145,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_04.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1030920_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
+      "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_14.png"
     }
   },
@@ -163,7 +163,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_04_04.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1024110_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
+      "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_24.png",
       "card_eza": "images/card_eza.png"
     }
@@ -182,7 +182,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_03_04.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1024290_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
+      "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_13.png",
       "card_eza": "images/card_eza.png"
     }
@@ -204,7 +204,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_03_04.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1030940_thumb.png",
-      "card_rarity": "images/rarity_UR.png",
+      "card_rarity": "../images/rarity_UR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_23.png"
     }
   },
@@ -223,7 +223,7 @@
     "Images": {
       "card_thumb_bg": "https://dokkan.wiki/assets/global/en/layout/en/image/character/character_thumb_bg/cha_base_00_05.png",
       "card_thumb_character": "https://dokkan.wiki/assets/global/en/character/thumb/card_1029830_thumb.png",
-      "card_rarity": "images/rarity_LR.png",
+      "card_rarity": "../images/rarity_LR.png",
       "card_element": "https://dokkan.wiki/assets/global/en/layout/en/image/character/cha_type_icon_10.png"
     }
   },
